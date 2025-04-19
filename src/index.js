@@ -73,11 +73,12 @@ async function handleRequest(request, env) {
         <head>
           <meta charset="UTF-8">
           <title>Redirecting...</title>
+					<script defer src="https://data.niceygy.net/script.js" data-website-id="b86895ed-129c-49a2-8471-111b5850d769"></script>
           <script>
             const delay = (ms) => new Promise((res) => setTimeout(res, ms));
 
               const redirect = async () => {
-                await delay(1000);
+                await delay(500);
                 //so the user can read the page!
                 window.location.href = "${destination}"
               };
